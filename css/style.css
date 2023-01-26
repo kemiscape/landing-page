@@ -18,6 +18,8 @@ body {
     padding: 0;
 }
 
+/* -------container 1------- */
+
 .container-1 {
     width: 100%;
     margin: 0;
@@ -29,12 +31,11 @@ body {
     align-items: center;
     gap: 64px;
     background-color: #1F2937;
-    padding-bottom: 64px;
 }
 
 .content-1 {
     display: flex;
-    border: green 3px solid;
+    padding-bottom: 96px;
 }
 
 .header, .header-content-1 {
@@ -113,6 +114,7 @@ a {
     border-radius: 10px;
     font-size: 16px;
     margin: 0;
+    padding: 4px 24px;
 }
 
 .content-right-img-holder {
@@ -126,3 +128,114 @@ a {
     color: white;
 }
 
+/* -------container 2------- */
+
+.container-2 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 62px 72px 62px;
+}
+
+.content-title-2 {
+    font-size: 36px;
+    color: #1F2937;
+}
+
+.content-illustration {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.boxes {
+    border: 3px #3882f6 solid;
+    height: 150px;
+    border-radius: 15px;
+    width: 150px;
+}
+
+.illu {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.illu > p {
+    margin: 8px;
+    width: 150px;
+    color: #525252;
+    text-align: justify;
+    text-align-last: center;
+}
+
+/* -------container 3------- */ 
+
+.container-3 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e7eb;
+    padding: 128px 64px;
+}
+
+.quote {
+    width: 75%;
+}
+
+.quote > p {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    margin: 0;
+}
+
+aside {
+    text-align: right;
+}
+
+/* -------container 4------- */
+
+.container-4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 96px 32px;
+}
+
+.content-signup {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 32px 64px;
+    background-color: #3882f6;
+}
+
+.call-to-action {
+    width: 70%;
+}
+
+.call-to-action > * {
+    margin: 0;
+    color: white;
+    width: 100%;
+}
+
+.sign-up-button-cto {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    padding: 0px 16px;
+}
+
+.signup-btn-cto {
+    padding: 4px 32px;
+    background-color: #3882f6;
+    border-radius: 5px; 
+    border: white 2px solid;
+    color: white;
+}
