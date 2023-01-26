@@ -8,6 +8,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .wrapper {
@@ -183,6 +184,9 @@ a {
 
 .quote {
     width: 75%;
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
 }
 
 .quote > p {
@@ -219,10 +223,21 @@ aside {
     width: 70%;
 }
 
+.call-to-action > p {
+    color: white;
+    font-size: large;
+    font-weight: 300;
+}
+
 .call-to-action > * {
     margin: 0;
     color: white;
     width: 100%;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: bolder;
 }
 
 .sign-up-button-cto {
@@ -235,9 +250,10 @@ aside {
 .signup-btn-cto {
     background-color: #3882f6;
     border-radius: 5px; 
-    border: #f9faf8 2px solid;
+    border: #f9faf8 3px solid;
     color: #f9faf8;
     padding: 8px 16px;
+    font-weight: bolder;
 }
 
 .signup-btn-cto > a {
