@@ -5,6 +5,8 @@ html {
     box-sizing: inherit;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -33,6 +35,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background: rgba(0, 0, 0, 0.507);
 }
 
 .content-1 {
@@ -200,18 +203,19 @@ body {
 .container-2 {
     width: 100%;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
     height: 70vh;
     background-color: white;
-    gap: 15%;
+    gap: 10%;
 }
 
-.content-title-2 > * {
+.content-title-2 > h3 {
     font-size: 3rem;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 .content-illustration {
@@ -237,14 +241,156 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 3px 5px rgba(0, 0, 0, 0.171);
+}
+
+.subtext {
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 1.2rem;
 }
 
 .desc {
     text-align: justify;
     text-align-last: center;
+    margin: 0;
 }
 
 .weapons {
     height: auto;
     width: 175px;
+    min-width: 175px;
+    max-width: 180px;
+}
+
+/* -------container-3------- */
+
+.container-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background: rgba(0, 0, 0, 0.507);
+    width: 100%;
+    color: white;
+    background-color: rgb(255, 196, 0);
+}
+
+.news {
+    display: flex;
+    width: 50%;
+}
+
+.left-news {
+    flex-basis: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 24px;
+    margin: 0;
+}
+
+.title-news {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.description-news {
+    font-size: 1.2rem;
+}
+
+.left-news > ul {
+    display: flex;
+    padding: 0;
+    gap: 24px;
+    margin: 0;
+}
+
+.left-news > ul > li {
+    list-style: none;
+    margin: 0;
+}
+
+.img-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.modern-living {
+    height: 200px;
+    width: 350px;
+    border-radius: 10% 20%;
+}
+
+/* -------container-4------- */
+
+.container-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+
+.content-signup {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 56px;
+}
+
+.call-to-action > h4 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.signup-btn-cto {
+    background-color: white;
+    padding: 8px 32px;
+    border: 2px solid rgb(255, 196, 0);
+}
+
+.signup-btn-cto > a {
+    text-decoration: none;
+    color: rgb(255, 196, 0);
+}
+
+/* -------footer------- */
+
+.footer {
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-contents {
+    width: 100%;
+    padding: 0 56px;
+    display: flex;
+    flex-flow: column;
+}
+
+.footer-contents > ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+}
+
+.footer-contents > ul > li {
+    font-size: 0.8rem;
+    padding: 0;
+    text-align: center;
+    flex: 33.33%;
 }
